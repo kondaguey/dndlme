@@ -43,7 +43,7 @@ function Footer() {
         </li>
         <li className="footer__nav__item">
           <a href="/collab" className="footer__nav__item-link">
-            Collab
+            Collab with me
           </a>
         </li>
       </ul>
