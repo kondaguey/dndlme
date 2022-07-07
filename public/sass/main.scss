@@ -1,0 +1,30 @@
+// 1. ABSTRACTS IMPORTS
+@import "./abstracts/variables";
+@import "./abstracts/animations";
+@import "./abstracts/mixins";
+
+// 2. BASE IMPORTS
+@import "./base/base";
+@import "./base/typography";
+
+// 3. COMPONENTS IMPORTS
+@import "./components/menuBar";
+@import "./components/footer";
+@import "./components/card";
+
+// 4. LAYOUT IMPORTS
+
+// 5. PAGES IMPORTS
+@import "./pages/home";
+@import "./pages/developer";
+@import "./pages/actor";
+@import "./pages/copywriter";
+@import "./pages/creativewriter";
+@import "./pages/collab";
+@import "./pages/privacyPolicy";
+
+
+// 6. THEMES IMPORTS
+
+// 7. VENDORS IMPORTS
+//Using directly in react

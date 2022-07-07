@@ -1,0 +1,276 @@
+.copy {
+  display: grid;
+  grid-template-columns: 1fr 80vw 1fr;
+  grid-template-rows: 1fr max-content min-content;
+  justify-items: center;
+
+  &__header {
+    grid-column: 2 / 3;
+    justify-self: center;
+    text-align: center;
+    margin: 5rem;
+    animation: moveInBottom 1s ease-in;
+    h2 {
+      margin-top: 1rem;
+      font-size: 3rem !important;
+     
+      @include respond(mobile-port) {
+        font-size: 2rem !important;
+      }
+    }
+    p {
+      margin-top: 1rem;
+      font-size: 2.5rem !important;
+     
+      @include respond(mobile-port) {
+        font-size: 1.7rem !important;
+      }
+      a{
+        @include themeGradient;
+      }
+      a:hover{
+        @include themeGradientReverse;
+      }
+    }
+  }
+
+  &__container {
+    grid-column: 2 / 3;
+
+    display: grid;
+    grid-template-columns: repeat(5, 18vw);
+    grid-template-rows: repeat(3, max-content);
+    justify-items: center;
+    align-items: center;
+    font-family: $font-2;
+    padding: 3rem;
+    animation: moveInBottom 1s ease-in;
+
+    h2 {
+      font-size: 3.5rem;
+      @include respond(tab-land_laptop) {
+        font-size: 2rem !important;
+      }
+    }
+
+    &__circle {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      height: 10rem;
+      width: 10rem;
+      padding: 5rem;
+      margin: 10rem;
+
+      border: $color-primary 0.15rem solid;
+      border-radius: 50%;
+      @include boxShadow;
+      border: $color-secondary 1px solid;
+      @include respond(mobile-port) {
+        height: 5rem;
+        width: 5rem;
+        padding: 1.5rem;
+        margin: 5rem;
+      }
+
+      &__arrow {
+        font-size: 10rem;
+        color: $color-secondary;
+        @include respond(mobile-port) {
+          font-size: 5rem;
+        }
+
+        &-left {
+          position: absolute;
+          top: 1.5rem;
+          left: -10rem;
+          @include respond(mobile-port) {
+            top: 0rem;
+            left: -5rem;
+          }
+        }
+        &-up {
+          position: absolute;
+          bottom: 18rem;
+          @include respond(mobile-port) {
+            bottom: 7rem;
+          }
+        }
+        &-right {
+          position: absolute;
+          top: 1.5rem;
+          left: 20rem;
+          @include respond(mobile-port) {
+            top: 0rem;
+            left: 8rem;
+          }
+        }
+
+        &-down {
+          &-1 {
+            position: absolute;
+            transform: rotate(45deg);
+            top: 15rem;
+            right: 15rem;
+            @include respond(mobile-port) {
+              top: 4.2rem;
+              left: -1.2rem;
+            }
+          }
+          &-2 {
+            position: absolute;
+            transform: rotate(-45deg);
+            top: 15rem;
+            left: 15rem;
+            @include respond(mobile-port) {
+              top: 6rem;
+              left: 5rem;
+            }
+          }
+        }
+      }
+
+      p {
+        @include respond(mobile-port) {
+          font-size: 1.5rem !important;
+          padding: 0;
+          position: absolute;
+          top: 2.8rem;
+          left: 1.3rem;
+        }
+      }
+    }
+
+    &__transform {
+      grid-column: 5 / 6;
+      grid-row: 2 / 3;
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+
+      padding: 3rem;
+      transition: all 0.4s ease;
+
+      border-radius: 1rem;
+      &:hover {
+        transform: scale(1.1);
+      }
+      @include respond(mobile-port) {
+        border: $color-secondary 1px solid;
+        padding: 0.5rem;
+      }
+    }
+
+    &__direct {
+      grid-column: 5 / 6;
+      grid-row: 2 / 3;
+      padding: 3rem;
+      border-radius: 1rem;
+      transition: all 0.4s ease;
+      z-index: 2;
+      justify-self: start;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+      @include respond(mobile-port) {
+        border: $color-secondary 1px solid;
+        padding: 0.5rem;
+      }
+    }
+
+    &__creative {
+      grid-column: 4 / 5;
+      grid-row: 3 / 4;
+      padding: 3rem;
+      // position: relative;
+      border-radius: 1rem;
+      transition: all 0.4s ease;
+      h1 {
+        font-size: 3.5rem;
+        @include respond(mobile-port) {
+          font-size: 1.5rem;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      @include respond(mobile-port) {
+        border: $color-secondary 1px solid;
+        padding: 0.5rem;
+        
+      }
+
+      span {
+        position: absolute;
+        font-size: 2rem;
+        top: 0;
+        @include respond(mobile-port) {
+          font-size: 1rem;
+          top: 0.5rem;
+          right: 0.5rem;
+        }
+      }
+    }
+
+    &__content {
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+      padding: 3rem;
+      transition: all 0.4s ease;
+
+      border-radius: 1rem;
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      @include respond(mobile-port) {
+        border: $color-secondary 1px solid;
+        padding: 0.5rem;
+      }
+    }
+
+    &__brand {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      padding: 3rem;
+      transition: all 0.4s ease;
+      justify-self: end;
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      @include respond(mobile-port) {
+        border: $color-secondary 1px solid;
+        padding: 0.5rem;
+      }
+
+      border-radius: 1rem;
+    }
+  }
+
+  &__feedback {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-weight: 400 !important;
+    }
+
+    img {
+      width: 90%;
+      @include respond(mobile-port) {
+        width: 100vw;
+        
+      }
+    }
+  }
+}

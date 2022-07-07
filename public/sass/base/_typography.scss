@@ -1,0 +1,47 @@
+h1 {
+  font-size: 5rem;
+  font-family: $font-1;
+  background-image: linear-gradient(to right, $color-primary, $color-secondary) !important;
+  -webkit-background-clip: text !important;
+  color: transparent !important;
+}
+
+h2 {
+  font-size: 4rem;
+  font-family: $font-1;
+  color: $color-tertiary;
+  @include respond(tab-land_laptop) {
+    font-size: 2.5rem;
+  }
+  @include respond(mobile-port) {
+    font-size: 2rem;
+  }
+}
+
+h3 {
+  font-size: 3rem;
+  font-family: $font-1;
+  background-image: linear-gradient(to right, $color-primary, $color-secondary);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+p {
+  font-size: 2.5rem !important;
+  font-family: $font-2;
+  font-weight: 300 !important;
+
+  @include respond(mobile-port) {
+    font-size: 3.5rem;
+  }
+}
+
+.typewriter-font {
+  font-family: "Special Elite", cursive;
+
+  overflow: hidden;
+  border-right: 0.5rem solid black;
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.5rem; /* Adjust as needed */
+  animation: typing 1.5s steps(25, end), blink-caret 0.9s step-end infinite;
+}

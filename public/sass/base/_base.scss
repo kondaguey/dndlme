@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $color-black;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: $color-white;
+  text-decoration: none;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  // grid-template-columns: minmax(min-content, 100vw);
+}
