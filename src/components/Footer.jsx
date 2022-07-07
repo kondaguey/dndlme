@@ -17,7 +17,6 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-           
             Stack Overflow
           </a>
         </li>
@@ -28,7 +27,6 @@ function Footer() {
             className="footer__nav__item-link"
             rel="noreferrer"
           >
-            
             Twitter
           </a>
         </li>
