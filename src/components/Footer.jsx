@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { BsStackOverflow, BsTwitter, BsMedium } from "react-icons/bs";
+// import { BsStackOverflow, BsTwitter, BsMedium } from "react-icons/bs";
 
 const date = new Date();
 const year = date.getFullYear();
@@ -17,9 +17,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <span className="footer__nav__item-logo">
-              <BsStackOverflow />
-            </span>
+           
             Stack Overflow
           </a>
         </li>
@@ -30,9 +28,7 @@ function Footer() {
             className="footer__nav__item-link"
             rel="noreferrer"
           >
-            <span className="footer__nav__item-logo">
-              <BsTwitter />
-            </span>
+            
             Twitter
           </a>
         </li>
@@ -43,9 +39,7 @@ function Footer() {
             className="footer__nav__item-link"
             rel="noreferrer"
           >
-            <span className="footer__nav__item-logo">
-              <BsMedium />
-            </span>
+            
             Medium
           </a>
         </li>
