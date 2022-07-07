@@ -372,7 +372,7 @@ p {
 .footer__nav__item, .footer__nav__item:link, .footer__nav__item:visited {
   align-self: center;
   font-size: 2rem;
-  color: inherit;
+  color: #6ec362;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   text-align: center;
@@ -380,6 +380,12 @@ p {
   display: block;
   transition: all 0.2s;
   text-decoration: none;
+}
+.footer__nav__item a, .footer__nav__item:link a, .footer__nav__item:visited a {
+  color: #6ec362;
+}
+.footer__nav__item a:hover, .footer__nav__item:link a:hover, .footer__nav__item:visited a:hover {
+  color: #fff;
 }
 .footer__nav__item:hover, .footer__nav__item:active, .footer__nav__item:link:hover, .footer__nav__item:link:active, .footer__nav__item:visited:hover, .footer__nav__item:visited:active {
   transform: translateY(-0.5rem);

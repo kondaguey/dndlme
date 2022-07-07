@@ -28,7 +28,7 @@
     &__item:visited {
       align-self: center;
       font-size: 2rem;
-      color: inherit;
+      color: $color-secondary;
       font-family: $font-1;
       text-transform: uppercase;
       text-align: center;
@@ -36,9 +36,16 @@
       display: block;
       transition: all 0.2s;
       text-decoration: none;
+      a {
+        color: $color-secondary;
+      }
+      a:hover {
+        color: $color-white;
+      }
       &:hover,
       &:active {
         transform: translateY(-0.5rem);
+        
       }
       span {
         font-size: 4rem;
