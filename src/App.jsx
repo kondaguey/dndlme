@@ -3,7 +3,7 @@ import MenuBar from "./components/MenuBar";
 import Developer from "./pages/Developer";
 import Actor from "./pages/Actor";
 import Copywriter from "./pages/Copywriter";
-import CreativeWriter from "./pages/CreativeWriter";
+import Blog from "./pages/Blog";
 import Footer from "./components/Footer";
 import Collab from "./pages/Collab";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -21,7 +21,7 @@ function App() {
             <Route path='/developer' element={<Developer />} />
             <Route path='/actor' element={<Actor/>} />
             <Route path='/copywriter' element={<Copywriter />} />
-            <Route path='/creativewriter' element={<CreativeWriter />} />
+            <Route path='/blog' element={<Blog />} />
             <Route path='/collab' element={<Collab />} />
             <Route path='/privacypolicy' element={<PrivacyPolicy />} />
           </Routes>

@@ -73,7 +73,7 @@ function Copywriter() {
         </div>
 
         <div className="copy__container__creative">
-        <a href="/creativewriter"><h1>/creativewriter</h1></a>
+        <a href="/blog"><h1>/blog</h1></a>
         </div>
 
         <div className="copy__container__content">

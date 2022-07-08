@@ -1,9 +1,9 @@
 import React from "react";
 
-function CreativeWriter() {
+function Blog() {
   return (
     <div className="creativewriter">
-      <h1>/creativewriter</h1>
+      <h1>/blog</h1>
       <h2>🚧 Debut: August, 2022 🚧</h2>
       <p> </p>
       <p> </p>
@@ -57,4 +57,4 @@ function CreativeWriter() {
   );
 }
 
-export default CreativeWriter;
+export default Blog;
