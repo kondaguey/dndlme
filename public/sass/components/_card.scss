@@ -25,12 +25,6 @@
     border-top-right-radius: 3px;
     object-fit: cover;
 
-    background-image: linear-gradient(
-      to right bottom,
-      $color-primary,
-      $color-secondary
-    );
-
     img {
       width: 100%;
       object-fit: contain;

@@ -456,7 +456,6 @@ p {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   object-fit: cover;
-  background-image: linear-gradient(to right bottom, #01aae4, #6ec362);
 }
 .card__picture img {
   width: 100%;
