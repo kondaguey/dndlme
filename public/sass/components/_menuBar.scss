@@ -6,9 +6,9 @@
   justify-content: center;
 
   background-color: $color-grey-light;
-  padding: 2rem; 
-  
-  @include respond(mobile-port) {
+  padding: 2rem;
+
+  @include respond(mobile-land_tab-port) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -19,11 +19,10 @@
   &__logo {
     width: 25rem;
     height: auto;
-    @include respond(mobile-port) {
+    @include respond(mobile-land_tab-port) {
       width: 20rem;
       height: auto;
       padding-bottom: 5rem;
-
     }
   }
 
@@ -48,6 +47,9 @@
     @include respond(mobile-land_tab-port) {
       padding-left: 5rem;
       font-size: 2.7rem;
+      align-self: center;
+      justify-self: center;
+      text-align: center;
     }
 
     @include respond(mobile-port) {
@@ -68,15 +70,16 @@
         font-size: 3.5rem;
         margin-top: 1rem;
       }
+      @include respond(mobile-land_tab-port) {
+        font-size: 3.5rem;
+        margin-top: 1rem;
+        flex-direction: row;
+      }
     }
     a:hover {
       padding: 3rem;
       color: $color-primary;
     }
-
-    
-   
-    
   }
 
   &__links {
@@ -88,6 +91,10 @@
       padding-right: 10rem;
 
       @include respond(mobile-port) {
+        padding-right: 0;
+      }
+
+      @include respond(mobile-land_tab-port) {
         padding-right: 0;
       }
 
@@ -115,6 +122,13 @@
           margin-top: 5rem;
         }
 
+        @include respond(mobile-land_tab-port) {
+          align-self: center;
+          width: 5rem;
+          height: 5rem;
+          margin-top: 5rem;
+        }
+
         &:hover {
           filter: brightness(1.2);
           color: $color-tertiary;
@@ -132,19 +146,19 @@
           padding: 1rem;
           transform: translate(-27%, 5%);
 
-          @include respond(mobile-port) {
+          @include respond(mobile-land_tab-port) {
             transform: translate(-25%, 0);
           }
 
           &--item {
             padding: 1rem;
-            &:not(:first-child){
+            &:not(:first-child) {
               border-top: $color-grey-light 1px solid;
             }
-            
+
             a {
               font-size: 2.5rem;
-              
+
               background-image: linear-gradient(
                 to right,
                 $color-primary,
@@ -170,8 +184,8 @@
   }
 }
 
-.kr{
-  a{
+.kr {
+  a {
     font-size: 10rem !important;
   }
 }

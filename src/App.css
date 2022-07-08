@@ -207,7 +207,7 @@ p {
   background-color: #e4e4e7;
   padding: 2rem;
 }
-@media only screen and (max-width: 27em) {
+@media only screen and (max-width: 37.5em) {
   .menu-bar {
     flex-direction: column;
     justify-content: center;
@@ -220,7 +220,7 @@ p {
   width: 25rem;
   height: auto;
 }
-@media only screen and (max-width: 27em) {
+@media only screen and (max-width: 37.5em) {
   .menu-bar__logo {
     width: 20rem;
     height: auto;
@@ -245,6 +245,9 @@ p {
   .menu-bar__header {
     padding-left: 5rem;
     font-size: 2.7rem;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 27em) {
@@ -267,6 +270,13 @@ p {
     margin-top: 1rem;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .menu-bar__socials a {
+    font-size: 3.5rem;
+    margin-top: 1rem;
+    flex-direction: row;
+  }
+}
 .menu-bar__socials a:hover {
   padding: 3rem;
   color: #01aae4;
@@ -280,6 +290,11 @@ p {
   padding-right: 10rem;
 }
 @media only screen and (max-width: 27em) {
+  .menu-bar__links__item {
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 37.5em) {
   .menu-bar__links__item {
     padding-right: 0;
   }
@@ -305,6 +320,14 @@ p {
     margin-top: 5rem;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .menu-bar__links__item-button {
+    align-self: center;
+    width: 5rem;
+    height: 5rem;
+    margin-top: 5rem;
+  }
+}
 .menu-bar__links__item-button:hover {
   filter: brightness(1.2);
   color: #acdbdb;
@@ -321,7 +344,7 @@ p {
   padding: 1rem;
   transform: translate(-27%, 5%);
 }
-@media only screen and (max-width: 27em) {
+@media only screen and (max-width: 37.5em) {
   .menu-bar__links__item-button-dropdown {
     transform: translate(-25%, 0);
   }
