@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-// import { BsStackOverflow, BsTwitter, BsMedium } from "react-icons/bs";
+import { BsMedium, BsTwitter, BsPeopleFill, BsFillMegaphoneFill } from "react-icons/bs";
+import { FaDev } from "react-icons/fa";
 
 const date = new Date();
 const year = date.getFullYear();
@@ -12,12 +13,12 @@ function Footer() {
     
         <li className="footer__nav__item">
           <a
-            href="https://stackoverflow.com/users/17514943/daniel"
+            href="https://dev.to/kondaguey"
             className="footer__nav__item-link"
             target="_blank"
             rel="noreferrer"
-          >
-            Stack Overflow
+          > <span> <FaDev /></span>
+            Dev
           </a>
         </li>
         <li className="footer__nav__item">
@@ -26,7 +27,7 @@ function Footer() {
             target="_blank"
             className="footer__nav__item-link"
             rel="noreferrer"
-          >
+          > <span> <BsTwitter /></span>
             Twitter
           </a>
         </li>
@@ -36,18 +37,20 @@ function Footer() {
             target="_blank"
             className="footer__nav__item-link"
             rel="noreferrer"
-          >
+          > <span> <BsMedium /></span>
             
             Medium
           </a>
         </li>
         <li className="footer__nav__item">
           <a href="/collab" className="footer__nav__item-link">
+          <span><BsPeopleFill/></span>
             Collab
           </a>
         </li>
         <li className="footer__nav__item">
           <a href="/privacypolicy" className="footer__nav__item-link">
+          <span><BsFillMegaphoneFill/></span>
             Disclaimers
           </a>
         </li>

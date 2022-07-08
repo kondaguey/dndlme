@@ -261,6 +261,12 @@ p {
   padding: 3rem;
   color: #6ec362;
 }
+@media only screen and (max-width: 27em) {
+  .menu-bar__socials a {
+    font-size: 3.5rem;
+    margin-top: 1rem;
+  }
+}
 .menu-bar__socials a:hover {
   padding: 3rem;
   color: #01aae4;

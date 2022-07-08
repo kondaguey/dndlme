@@ -64,11 +64,18 @@
     a {
       padding: 3rem;
       color: $color-secondary;
+      @include respond(mobile-port) {
+        font-size: 3.5rem;
+        margin-top: 1rem;
+      }
     }
     a:hover {
       padding: 3rem;
       color: $color-primary;
     }
+
+    
+   
     
   }
 

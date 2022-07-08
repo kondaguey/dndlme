@@ -3,7 +3,8 @@ import React from "react";
 import MenuBarItem from "./MenuBarItem";
 import DropdownMenu from "./DropdownMenu";
 import { FiChevronDown } from "react-icons/fi";
-import { BsMedium, BsTwitter, BsStackOverflow } from "react-icons/bs";
+import { BsMedium, BsTwitter } from "react-icons/bs";
+import { FaDev } from "react-icons/fa";
 
 function MenuBar(props) {
   return (
@@ -22,10 +23,10 @@ function MenuBar(props) {
             <BsTwitter />
           </a>
           <a
-            href="https://stackoverflow.com/users/17514943/daniel"
+            href="https://dev.to/kondaguey"
             target="_blank"
           >
-            <BsStackOverflow />
+            <FaDev />
           </a>
         </div>
       </div>
