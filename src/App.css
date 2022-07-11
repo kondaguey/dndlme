@@ -930,10 +930,27 @@ p {
   font-weight: 400 !important;
   margin-bottom: 15rem;
 }
+.actor__paragraph a {
+  background-image: linear-gradient(to right, #01aae4, #6ec362);
+  -webkit-background-clip: text;
+  color: transparent;
+}
 @media only screen and (max-width: 27em) {
   .actor__paragraph {
     padding: 5rem 0 0 0;
   }
+}
+.actor__voiceactor {
+  grid-column: 2/4;
+  justify-self: center;
+  text-align: center;
+}
+.actor__voiceactor a {
+  cursor: pointer;
+}
+.actor__voiceactor img {
+  margin: 10rem 0;
+  animation: shake 3s infinite;
 }
 
 .copy {
